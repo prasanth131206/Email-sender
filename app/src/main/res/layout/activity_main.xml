@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Email"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- To Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etTo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="recipient@example.com"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_bg"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Subject Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Enter subject"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Body Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/etBody"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:hint="Write your message here..."
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Send Email"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4A90D9"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
